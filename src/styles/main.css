@@ -1,0 +1,105 @@
+.page-wrapper .template-wrapper .single-chat-form {
+  margin: 20px;
+}
+
+.page-wrapper .template-wrapper .single-chat-form .form-input {
+  display: block;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border: solid 1px #000;
+  padding-left: 5px;
+}
+
+.page-wrapper .template-wrapper .single-chat-template {
+  border: solid 10px #fc88b0;
+  border-radius: 10px;
+  margin: 3px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.6fr 1fr;
+      grid-template-columns: 1.6fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 4px;
+  padding: 10px 8px;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .img-host {
+  border-radius: 50%;
+  border: solid 5px #fc88b0;
+  min-width: 110px;
+  min-height: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .section-1 .live-box {
+  position: relative;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .section-1 .live-box .live-text {
+  background: red;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  max-height: 22px;
+  margin-right: 10px;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .section-1 .live-box .down-arrow {
+  position: absolute;
+  top: 26px;
+  width: 20px;
+  height: 20px;
+  left: 30%;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .section-1 .video-text-block .title {
+  color: #00b3cd;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .section-1 .video-text-block .platform-name {
+  text-align: right;
+  color: #fc88b0;
+  font-size: 9px;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .topic {
+  margin: 10px 0px 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fc88b0;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .event_date_time {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .host_name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 0px 0px;
+  color: #00b3cd;
+  text-transform: uppercase;
+}
+
+.page-wrapper .template-wrapper .single-chat-template .expertise {
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */

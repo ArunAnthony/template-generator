@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import arrow from '../down-arrow.svg';
 
+import { saveAsPng, saveAsJpeg } from 'save-html-as-image';
+
 const LiveChatTemplate = () => {
+    const templateRef = useRef(null);
 
     const [content, setContent] = useState({
         "topic": "",
@@ -42,6 +45,13 @@ const LiveChatTemplate = () => {
             });
         }
     }
+
+
+    const handleSave = () => {
+        const node = templateRef.current;
+        saveAsPng(node, { filename: 'template', printDate: false });
+    }
+
     return (
         <div className='template-wrapper'>
             <div className='single-chat-form'>
@@ -51,9 +61,11 @@ const LiveChatTemplate = () => {
                 <input type="text" value={content.expertise} placeholder='Enter your Expertise' name='expertise' onChange={handleChange} className='form-input' />
                 <input type="text" value={content.on_platform} placeholder='Enter platform' name='on_platform' onChange={handleChange} className='form-input' />
                 <input type="file" placeholder='Add Image' name='img_url' onChange={handleImageChange} className='form-input' accept='image/*' />
+
+                <button onClick={handleSave}> Save </button>
             </div>
 
-            <div className='single-chat-template'>
+            <div className='single-chat-template' ref={templateRef}>
                 <div className='info-wrapper'>
                     <div className='section-1'>
                         <div className="live-box">
