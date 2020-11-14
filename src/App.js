@@ -1,5 +1,11 @@
 import './styles/main.scss';
-import LiveChatTemplate from './components/LiveChatTemplate';
+
+import BlogFullPageView from './components/Blog/BlogFullPageView';
+import HeroCard from './components/homepage/HeroCard';
+import MyselfBlock from './components/common/MyselfBlock';
+import ContactBlock from './components/common/ContactBlock';
+import ProjectsBlock from './components/Projects/ProjectsBlock';
+import BlogBlock from './components/Blog/BlogBlock';
 
 function App() {
   return (
@@ -20,7 +26,12 @@ function App() {
       </header> */}
 
       <div className='page-wrapper'>
-        <LiveChatTemplate />
+        {/* <BlogFullPageView /> */}
+        <MyselfBlock />
+        <HeroCard />
+        <ProjectsBlock />
+        <BlogBlock />
+        <ContactBlock />
       </div>
     </div>
   );

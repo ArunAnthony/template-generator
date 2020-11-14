@@ -1,0 +1,29 @@
+.blog-page-view{
+    margin:10px 15px;
+    .blog-description{
+        font-size:18px;
+        line-height: 1.7em;
+        .blog-img{
+            width:100%;
+        }
+    }
+    .blog-title{
+        font-size:19px;
+    }
+}
+
+
+@media(min-width:759px){
+    .blog-page-view{
+        .blog-description{
+           
+        }
+    }
+}
+
+
+@media(max-width:760px){
+    .blog-page-view{
+        margin:10px 15px;
+    }
+}

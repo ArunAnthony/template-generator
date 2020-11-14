@@ -1,0 +1,16 @@
+.social-media-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 0px;
+    .social-media-icon-wrap{
+        border-color: #D1D9E6;
+        box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+        padding: 10px;
+        border-radius: 50%;
+        max-width: 1.9rem;
+        max-height: 1.9rem;
+        img{
+            width:100%;
+        }
+    }
+}

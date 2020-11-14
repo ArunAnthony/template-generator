@@ -1,0 +1,35 @@
+.project-card{
+    padding:0px 0px 20px 0px !important;
+    margin-bottom:20px;
+    text-align: left;
+    padding: 20px 12% 15%;
+    box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
+    border-radius: 0.55rem;
+    // background: #fff;
+    .project-cover-img{
+        width:100%;
+        border-radius:5px;
+    }
+    .project-text{
+        padding:10px 10px 0px 10px;
+        .project-name{
+            font-size:17px;
+            font-weight: 700;
+        }
+        .location-wrapper{
+            display:flex;
+            padding:10px 0px;
+            .location{
+                padding-left:5px;
+            }
+        }
+        .view-more-btn{
+            text-transform: uppercase;
+            margin-top:20px;
+            font-size:13px;
+            font-weight: bold;
+        }
+    }
+   
+   
+}
